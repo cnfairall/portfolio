@@ -12,13 +12,13 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
+      href="apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
+      href="favicon-32x32.png"
     />
 
     <!-- Animate CSS CDN -->
@@ -26,17 +26,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Jane Doe | Web Developer</title>
+    <title>Courtney Fairall | Full Stack Software Developer</title>
   </head>
 
   <body>
     <!-- Navbar -->
     <nav>
-      <h1>JANE DOE</h1>
+      <h1 class="brand">COURTNEY FAIRALL</h1>
       <ul class="navigation">
         <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
       <button class="burger-menu" id="burger-menu">
@@ -45,52 +45,47 @@
       </button>
     </nav>
     
-    <p> 0024 </p>
+    <div class="hero-container">
+      <div class="hero" id="about">
+        <img src="assets/images/3.png" alt="logo" id="logo" />
+        <div class="summary">
+          <p>
+            I am a junior developer and Nashville Software School graduate plunging into a career change after many years of working in customer service, education, and stay-at-home-mom life.
+          </p>
+          <p>
+            Learning to code has changed my life. Ideating, planning, and crafting solutions is a dopamine machine that empowers me to create and to take care of my family.
+          </p>
+        </div>
+      </div>
+    </div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="about">
-      <img
-        src="assets/images/wfh_1.svg"
-        alt="jane-doe"
+    <div class="about">
+      <div class="about-1">
+        <div class="about-text">
+          <h2>About</h2>
+          <p>
+          As a musical theater kid who always connected deeply with arts and humanities, I assumed that tech and I had nothing to do with each other. I earned a Bachelor's degree in Anthropology and Sociology and channeled my creativity into improv.
+          </p>
+          <p>
+          But learning about user experience design revealed the industry's need for my user-centered strengths: empathy, communication, and humor. From there I discovered I could code and shockingly, that I loved it. I jumped on the opportunity to enroll in the part-time evening Full Stack Web Development program at NSS.
+          </p>
+        </div>
+        <img
+        src="assets/images/CourtneyFairallheadshot.jpg"
+        alt="headshot"
         loading="lazy"
         class="hero-img"
-      />
-      <div class="bio animate__animated animate__shakeX">
-        <h2 class="bio-title">About Me</h2>
-        <p class="bio-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-          dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-          inventore tempore minus nemo, iste ullam illo laboriosam maiores
-          repudiandae quos!
-        </p>
+        />
       </div>
-    </section>
+      <p>
+        As an improviser I thrive within a team that trusts each other enough to build a scene together; a motto is, “you bring a brick and I bring a brick.” Development is like that, satisfying my creative need for collaboration and breaking a problem into a series of steps. Performing onstage has dissolved my fear of being wrong, being vulnerable, or trying something new. I am inspired to learn continuously.
+      </p>
+    </div>
 
-    <!-- More about -->
-    <section class="more-about">
-      <h2>More About Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-        autem deleniti cupiditate molestias quis unde quae totam porro dicta
-        iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-        nostrum dolor minus, libero delectus praesentium perferendis
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-        consequuntur labore? Ea totam voluptas amet!
-      </p>
-    </section>
-
-    <!-- Skills section -->
     <section class="skills" id="skills">
-      <h2 class="skill-header">My Top Skills</h2>
-
+      <h2 class="skill-header">Top Skills</h2>
       <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
+        <div class="first-set">
           <img
             src="assets/icons/icons8-html-5.svg"
             alt=""
@@ -109,11 +104,8 @@
             loading="lazy"
             class="icon icon-card"
           />
-        </div>
-
-        <div class="second-set animate__animated animate__pulse">
           <img
-            src="assets/icons/icons8-bootstrap.svg"
+            src="assets/icons/next-js-logo-7929BCD36F-seeklogo.com.png"
             alt=""
             loading="lazy"
             class="icon icon-card"
@@ -124,164 +116,137 @@
             loading="lazy"
             class="icon icon-card"
           />
+        </div>
+        </div>
+
+        <div class="second-set">
+          <img
+            src="assets/icons/icons8-bootstrap.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
           <img
             src="assets/icons/icons8-git.svg"
             alt=""
             loading="lazy"
             class="icon icon-card"
           />
+          <img
+            src="assets/icons/c-logo-icon-18.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+          src="assets/icons/dotnet-icon-1024x1024-jg3zpu0s.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+          />
+          <img
+          src="assets/icons/postgresql-logo.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section id="no-margins">
+    <div class="projects" id="projects">
+      <h2 class="projects-title">Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <div>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+              <iframe src="https://www.loom.com/embed/a0c91e8c9cef4cd99a0ed51d8b1bbfaf?sid=135f0f17-fac6-463b-9bee-77861991662a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+              </iframe>
+            </div>
+            <h3 class="project-title">Cocktail Club</h3>
+          </div>
+          <p class="project-details">
+          Fetch cocktail recipes from Cocktails.db by name, glass and spirit and save, review, and share those recipes with other users.
+          </p>
+          <p>Full stack capstone.</p>
+          <a href="https://cocktailclubapp.netlify.app" target="_blank" class="project-link">Deployed site</a>
+        </div>
+        <div class="project-container project-card">
+          <div>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+              <iframe src="https://www.loom.com/embed/64520fe4da35437eb44179c626836b8a?sid=2e4a6369-a11f-4ce2-aaa8-830bc7e38eca" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+              </iframe>
+            </div>
+            <h3 class="project-title">Y2Play</h3>
+          </div>
+          <p class="project-details">
+            Search a database of hit songs from 2000-2010 and create, edit, delete, and view playlists.
+          </p>
+          <p>Team project; I handled songs API and wrote majority of styling, including creating custom SVGs and navbar.
+          </p>
+          <a href="https://github.com/nss-evening-cohort-26/FE-Hackathon-music-streaming-project" target="_blank" class="project-link">Github</a>
+        </div>
+        <div class="project-card">
+          <div>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/34f7be53ae3f431880ec4d45e75f4f3d?sid=0c98019d-895a-4f7f-8e0d-d8120158eca8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+            <h3 class="project-title">YOURWARDROBE</h3>
+          </div>
+          <p class="project-details">
+            Catalogue your wardrobe and generate and save outfits in this <i>Clueless</i>-inspired app.
+          </p>
+          <p>Front end capstone.</p>
+          <a href="https://yourwardrobe.netlify.app" target="_blank" class="project-link">Deployed site</a>
         </div>
       </div>
     </section>
 
-    <!-- Projects section -->
-    <section class="projects" id="projects">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="assets/images/expenseTracker.png"
-            alt="expense-tracker"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Expense Tracker</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+    <section>
+      <div class="resume" id="resume"></div>
+      <h2 class="resume-header">Resume</h2>
+        <div class="resume-container">
+          <img class= "resume-img" src="assets/images/Resume1.png" alt="resume page 1" />
+          <img class= "resume-img" src="assets/images/Resume2.png" alt="resume page 2" />
         </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/netflixClone.png"
-            alt="netflic-clone"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Netflix Clone</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/images/greenyEarth.png"
-            alt="greeny-earth"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Greeny Earth</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-      </div>
     </section>
 
     <!-- Contact section -->
     <section class="contact" id="contact">
-      <h2>Get In Touch With Me</h2>
-      <div class="contact-form-container">
-        <div class="contact-form">
-          <form action="https://formspree.io/f/xyylnggw" method="POST">
-            <div class="form-control">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Enter Your Name"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Enter Your Email"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <label for="message">Message</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Enter Your Message"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
-            </div>
-            <input
-              type="submit"
-              value="Submit"
-              id="submit-btn"
-              class="submit-btn"
-            />
-          </form>
+      <h2>Get In Touch</h2>
+      <div class="socials">
+        <div class="email">
+          <p class="email-me">Email me at</p>
+          <a href="mailto:courtneynudingfairall@gmail.com" target="_blank">
+            <p class="email-at">courtneynudingfairall@gmail.com</p>
+          </a>
         </div>
+        <a href="https://linkedin.com/in/courtneyfairall" target="_blank"
+        ><img
+        src="assets/icons/linkedin-logo-hd-png-3.png"
+        alt="Linkedin"
+        loading="lazy"
+        class="socicon"
+        /></a>
+        <a href="https://github.com/cnfairall" target="_blank"
+        ><img src="assets/icons/github-logo-icon-3.png" alt="Github" class="socicon"
+        /></a>
       </div>
     </section>
 
-    <!-- Social accounts - Fixed to the right -->
-    <div class="socials">
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-twitter-circled.gif"
-          alt="Twitter"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-instagram.gif"
-          alt="Instagram"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="assets/icons/icons8-linkedin-circled.gif"
-          alt="Linkedin"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
-      /></a>
-    </div>
-
+    
+      
     <!-- Scroll to top -->
     <i class="scroll-up" id="scroll-up"
       ><img
-        src="assets/icons/icons8-upward-arrow.gif"
+        src="assets/icons/back-to-top-icon-png-20.jpg"
         class="socicon up-arrow"
         alt=""
     /></i>
 
     <!-- Footer section -->
     <footer>
-      <p class="copy">&copy; Copyright 2021</p>
-      <p class="copy">
-        Built with &#x2661; by
-        <a href="https://twitter.com/Ksound22" target="_blank"
-          >Kolade Chris (Ksound)</a
-        >
-      </p>
+      <p class="copy">&copy; Copyright 2024 Courtney Fairall</p>
     </footer>
 
     <!-- Website scripts -->
