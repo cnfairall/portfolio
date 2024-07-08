@@ -47,40 +47,36 @@
     </nav>
     
     <div class="hero-container">
-      <div class="hero" id="about">
+      <div class="hero" id="hero">
         <img src="assets/images/3.png" alt="logo" id="logo" />
         <div class="summary">
           <p>
-            I am a junior developer and Nashville Software School graduate plunging into a career change after many years of working in customer service, education, and stay-at-home-mom life.
+            I am a <span class="big">junior full stack developer</span> and Nashville Software School graduate plunging into a career change after many years of working in customer service, education, and stay-at-home-mom life.
           </p>
           <p>
-            Learning to code has changed my life. Ideating, planning, and crafting solutions is a dopamine machine that empowers me to create and to take care of my family.
+            Learning to code has changed my life.<br /> Ideating, planning, and crafting solutions is a dopamine machine that empowers me to create and to take care of my family.
           </p>
         </div>
       </div>
     </div>
 
     <div class="about">
-      <div class="about-1">
-        <div class="about-text">
-          <h2>About</h2>
-          <p>
-          As a musical theater kid who always connected deeply with arts and humanities, I assumed that tech and I had nothing to do with each other. I earned a Bachelor's degree in Anthropology and Sociology and channeled my creativity into improv.
-          </p>
-          <p>
-          But learning about user experience design revealed the industry's need for my user-centered strengths: empathy, communication, and humor. From there I discovered I could code and shockingly, that I loved it. I jumped on the opportunity to enroll in the part-time evening Full Stack Web Development program at NSS.
-          </p>
-        </div>
+        <h2>About</h2>
         <img
         src="assets/images/CourtneyFairallheadshot.jpg"
         alt="headshot"
         loading="lazy"
         class="hero-img"
         />
-      </div>
-      <p>
-        As an improviser I thrive within a team that trusts each other enough to build a scene together; a motto is, “you bring a brick and I bring a brick.” Development is like that, satisfying my creative need for collaboration and breaking a problem into a series of steps. Performing onstage has dissolved my fear of being wrong, being vulnerable, or trying something new. I am inspired to learn continuously.
-      </p>
+          <p>
+          As a musical theater kid who always connected deeply with arts and humanities, I assumed that tech and I had nothing to do with each other. I earned a Bachelor's degree in Anthropology and Sociology and channeled my creativity into improv.
+          </p>
+          <p>
+          But learning about user experience design revealed the industry's need for my user-centered strengths: empathy, communication, and humor. From there I discovered I could code and shockingly, that I loved it. I jumped on the opportunity to enroll in the part-time evening Full Stack Web Development program at NSS.
+          </p>
+          <p>
+            As an improviser I thrive within a team that trusts each other enough to build a scene together; a motto is, “you bring a brick and I bring a brick.” Development is like that, satisfying my creative need for collaboration and breaking a problem into a series of steps. Performing onstage has dissolved my fear of being wrong, being vulnerable, or trying something new. I am inspired to learn continuously.
+          </p>
     </div>
 
     <section class="skills" id="skills">
@@ -160,7 +156,7 @@
     <div class="projects" id="projects">
       <h2 class="projects-title">Recent Projects</h2>
       <div class="projects-container">
-        <div class="project-container project-card">
+        <div class="project-card">
           <div>
             <div style="position: relative; padding-bottom: 56.25%; height: 0;">
               <iframe src="https://www.loom.com/embed/a0c91e8c9cef4cd99a0ed51d8b1bbfaf?sid=135f0f17-fac6-463b-9bee-77861991662a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
@@ -174,7 +170,7 @@
           <p>Full stack capstone.</p>
           <a href="https://cocktailclubapp.netlify.app" target="_blank" class="project-link">Deployed site</a>
         </div>
-        <div class="project-container project-card">
+        <div class="project-card">
           <div>
             <div style="position: relative; padding-bottom: 56.25%; height: 0;">
               <iframe src="https://www.loom.com/embed/64520fe4da35437eb44179c626836b8a?sid=2e4a6369-a11f-4ce2-aaa8-830bc7e38eca" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
@@ -204,12 +200,16 @@
     </section>
 
     <section>
-      <div class="resume" id="resume"></div>
-      <h2 class="resume-header">Resume</h2>
+      <div class="resume" id="resume">
+
+        <h2 class="resume-header">Resume</h2>
+        <p class="pdf"><a href="/developer-portfolio/assets/images/Courtney Fairall Resume.pdf" target="_blank">Open the PDF</a>
+        </p>
         <div class="resume-container">
           <img class= "resume-img" src="assets/images/Resume1.png" alt="resume page 1" />
           <img class= "resume-img" src="assets/images/Resume2.png" alt="resume page 2" />
         </div>
+      </div>
     </section>
 
     <!-- Contact section -->
@@ -240,6 +240,7 @@
     <!-- Scroll to top -->
     <i class="scroll-up" id="scroll-up"
       ><img
+        id="arrow"
         src="assets/icons/back-to-top-icon-png-20.jpg"
         class="socicon up-arrow"
         alt=""
