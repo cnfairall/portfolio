@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@loomhq/loom-embed": "^1.7.0"
+  }
+}
