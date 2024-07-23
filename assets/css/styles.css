@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Roboto+Flex&display=swap');
 /* Variables */
 :root {
-  --font-family: Quicksand;
+  --font-family: Roboto Flex;
   --normal-font: 500;
-  --bold-font: 700;
+  --bold-font: 600;
   --bolder-font: 900;
-  --bg-color: #fddce3;
-  --primary-color: #004346;
-  --secondary-color: #d84773;
-  --primary-shadow: #c3e991;
+  --bg-color: #C4FFD3;
+  --primary-color: #A989FF	;
+  --secondary-color: 	#89ffa9	;
+  --primary-shadow: #35c65c;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -65,16 +65,19 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
-  background-color: var(--bg-color);
+  background-color: white;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .brand {
-  font-family: Tenor Sans;
+  font-family: League Spartan;
+  font-size: 50px;
+  color: var(--secondary-color);
+  text-shadow: 2px 2px var(--primary-color);
 }
 
 h2 {
-  font-family: Tenor Sans;
+  font-family: League Spartan;
   font-size: 30px;
   color: var(--primary-color);
 }
@@ -99,7 +102,8 @@ nav ul {
 
 nav ul li {
   font-weight: var(--bold-font);
-  font-family: Tenor Sans;
+  font-family: League Spartan;
+  font-size: 25px;
 }
 
 .burger-menu {
@@ -120,7 +124,7 @@ nav ul li {
   width: 100%;
   margin: auto;
   background-color: var(--primary-color);
-  margin-bottom: var(--bottom-margin);
+  margin-bottom: 1.5em;
   z-index: 0;
 }
 
@@ -141,16 +145,16 @@ nav ul li {
 }
 
 .summary p {
-  line-height: 2;
+  line-height: 1.5;
   color: white;
   padding: 0 3em 0 0;
-  font-size: 18px;
-  font-family: Tenor Sans;
+  font-size: 22px;
+  font-family: League Spartan;
 
 }
 
 .big {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: var(--bold-font);
 }
 
@@ -162,6 +166,8 @@ nav ul li {
 .about h2 {
   margin: 16px 0 8px 6.4px;
   z-index: 1;
+  color: var(--secondary-color);
+  text-shadow: 1px 1px var(--primary-color);
 
 }
 
@@ -246,8 +252,8 @@ nav ul li {
 .project-title {
   margin-top: 20px;
   margin-bottom: var(--bottom-margin);
-  font-family: Tenor Sans;
-  color: var(--secondary-color)
+  font-family: League Spartan;
+  color: var(--primary-color)
 }
 
 .project-details {
@@ -258,6 +264,7 @@ nav ul li {
   text-align: center;
   margin-top: 10px;
   font-weight: var(--bold-font);
+  color: var(--primary-shadow)
 }
 
 /* Projects section ends */
@@ -283,7 +290,7 @@ nav ul li {
 .pdf {
   text-align: center;
   padding-top: 10px;
-  color: var(--secondary-color)
+  color: var(--primary-shadow)
 }
 
 /* Contacts section */
@@ -319,12 +326,11 @@ nav ul li {
 
 .email-me {
   font-weight: var(--bold-font);
-  color: var(--primary-color)
 }
 
 .email-at {
   font-weight: var(--bold-font);
-  color: var(--secondary-color)
+  color: var(--primary-color)
 }
 /* Social button ends */
 
@@ -375,7 +381,7 @@ footer {
 @media screen and (max-width: 720px) {
   nav ul {
     position: fixed;
-    background-color: var(--bg-color);
+    background-color: white;
     flex-direction: column;
     top: 50px;
     right: 0%;
@@ -383,12 +389,12 @@ footer {
     text-align: center;
     transform: translateX(120%);
     transition: transform 0.5s ease-in;
-    padding: 8px 0;
-    border-radius: 0 8px;
+    padding: 1em 0;
   }
 
   nav ul li {
     margin: 8px;
+    font-size: 20px;
   }
 
   nav {
