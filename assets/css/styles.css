@@ -17,6 +17,30 @@
 }
 /* Variables end */
 
+@keyframes droplets {
+0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(1080deg);
+  }
+}
+#shape {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-image: url("../images/fuzz.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  animation: droplets 3s;
+  position: relative;
+  margin-right:auto;
+  margin-left: auto;
+}
 p {
   font-weight: var(--normal-font);
   padding-bottom: 8px;
@@ -77,15 +101,14 @@ nav {
 .brand {
   font-family: League Spartan;
   font-size: 100px;
-  /* color: var(--secondary-color);
-  text-shadow: 2px 2px var(--primary-shadow); */
-            background-image: url("../images/fuzz.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            color: transparent;
-            background-clip: text;
-            -webkit-background-clip: text;
+ 
+  background-image: url("../images/fuzz.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 h2 {
