@@ -5,8 +5,8 @@
   --normal-font: 500;
   --bold-font: 600;
   --bolder-font: 900;
-  --bg-color: #d7d0c4;
-  --primary-color: #f79908	;
+  --bg-color: #d4b3ac;
+  --primary-color: #53608a	;
   --secondary-color: 	#89ffa9	;
   --primary-shadow: #35c65c;
   --accent-color: #d84773;
@@ -19,6 +19,7 @@
 
 p {
   font-weight: var(--normal-font);
+  padding-bottom: 8px;
 }
 
 html {
@@ -39,24 +40,23 @@ ul {
 a {
   text-decoration: none;
   color: var(--primary-color);
+  font-weight: bold;
 }
 
 a:hover {
-  color: var(--secondary-color);
+  color: var(--primary-shadow);
 }
 
 body {
   font-family: var(--font-family);
   background-color: var(--bg-color);
   width: 100vw
-  /* background-image: url("../images/fuzz.png");
-  background-size: 150%;
-  background-position: center;
-  backdrop-filter: contrast(150%) brightness(50%) */
+  
 }
 
 section {
-  margin: var(--bottom-margin-2)
+  margin: var(--bottom-margin-2);
+  padding: 1.5rem 0
 }
 
 /* CSS Resets end */
@@ -69,7 +69,7 @@ nav {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: var(--primary-color);
+  background-color: transparent;
   padding: 1.5rem 3.5rem;
   /* box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); */
 }
@@ -137,11 +137,15 @@ nav ul li {
   justify-content: center;
   width: 100%;
   height: 80vh;
-  margin: auto;
-  background-color: var(--primary-color);
-  
+  margin: auto; 
   margin-bottom: 1.5em;
   z-index: 0;
+}
+
+.first-page, .main {
+  background: #4E293A;
+  background: linear-gradient(200deg,rgba(78, 41, 58, 1) 0%, rgba(83, 96, 138, 1) 100%);
+
 }
 
 .hero-img {
@@ -196,9 +200,8 @@ nav ul li {
 }
 
 .about h2 {
-  margin: 16px 0 8px 6.4px;
+  margin: 0 0 16px 8px;
   z-index: 1;
-  color: var(--primary-color);
 
 }
 
@@ -229,6 +232,10 @@ nav ul li {
 
 .skills-wrapper img {
   padding: 1.25rem;
+}
+
+.skill-header, .resume-header {
+  color: var(--secondary-color)
 }
 
 .icon {
@@ -297,7 +304,10 @@ nav ul li {
 
 .project-link a {
     color: var(--primary-shadow)
+}
 
+.project-link, .pdf a:hover {
+  color: var(--secondary-color)
 }
 
 /* Projects section ends */
@@ -364,7 +374,8 @@ nav ul li {
 
 .email-at {
   font-weight: var(--bold-font);
-  color: var(--accent-color)
+  color: var(--primary-color);
+  font-size: 20px;
 }
 /* Social button ends */
 
