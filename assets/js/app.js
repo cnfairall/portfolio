@@ -22,6 +22,17 @@ navLink.forEach((link) =>
 );
 
 // scroll to top functionality
+window.addEventListener('scroll', () => {
+  const hero = document.getElementById('hero')
+  const heroBottom = hero.offsetHeight
+  if (window.scrollY > heroBottom){
+    scrollUp.style.display = 'block'
+  }
+  if (window.scrollY < heroBottom){
+    scrollUp.style.display = "none"
+  }
+})
+
 scrollUp.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
