@@ -40,3 +40,9 @@ scrollUp.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+const flow = document.querySelector('#flow')
+const def = document.querySelector('#definition')
+flow.addEventListener('hover', () => {
+  definition.setAttribute('display', 'flex')
+})
