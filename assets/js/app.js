@@ -10,6 +10,7 @@ const scrollUp = document.querySelector("#scroll-up");
 const navLink = document.querySelectorAll(".nav-link");
 
 // Hamburger menu function
+
 burger.addEventListener("click", () => {
   ul.classList.toggle("show");
 });
@@ -22,6 +23,17 @@ navLink.forEach((link) =>
 );
 
 // scroll to top functionality
+window.addEventListener('scroll', () => {
+  const hero = document.getElementById('hero')
+  const heroBottom = hero.offsetHeight
+  if (window.scrollY > heroBottom){
+    scrollUp.style.display = 'block'
+  }
+  if (window.scrollY < heroBottom){
+    scrollUp.style.display = "none"
+  }
+})
+
 scrollUp.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
@@ -29,3 +41,10 @@ scrollUp.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+const flow = document.querySelector('#flow')
+const def = document.querySelector('#definition')
+
+flow.addEventListener('click', () => {
+  def.classList.toggle('show')
+})
