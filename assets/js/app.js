@@ -10,6 +10,7 @@ const scrollUp = document.querySelector("#scroll-up");
 const navLink = document.querySelectorAll(".nav-link");
 
 // Hamburger menu function
+
 burger.addEventListener("click", () => {
   ul.classList.toggle("show");
 });
@@ -43,6 +44,7 @@ scrollUp.addEventListener("click", () => {
 
 const flow = document.querySelector('#flow')
 const def = document.querySelector('#definition')
-flow.addEventListener('hover', () => {
-  definition.setAttribute('display', 'flex')
+
+flow.addEventListener('click', () => {
+  def.classList.toggle('show')
 })
